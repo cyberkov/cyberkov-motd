@@ -1,12 +1,12 @@
 {
-  "name": "cyberkov-motd",
+  "name": "puppet-motd",
   "version": "0.1.0",
   "author": "cyberkov",
   "summary": "Manage Message of the day file",
   "license": "Apache 2.0",
-  "source": "https://github.com/cyberkov/cyberkov-motd.git",
-  "project_page": "https://github.com/cyberkov/cyberkov-motd",
-  "issues_url": "https://github.com/cyberkov/cyberkov-motd/issues",
+  "source": "https://github.com/cyberkov/puppet-motd.git",
+  "project_page": "https://github.com/cyberkov/puppet-motd",
+  "issues_url": "https://github.com/cyberkov/puppet-motd/issues",
   "dependencies": [
     {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
   ]
