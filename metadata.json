@@ -1,5 +1,5 @@
 {
-  "name": "puppet-motd",
+  "name": "cyberkov-motd",
   "version": "0.1.0",
   "author": "cyberkov",
   "summary": "Manage Message of the day file",
