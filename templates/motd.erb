@@ -1,0 +1,27 @@
+-------------------------------------------------
+<%= @ascii_banner %>
+Welcome to the host named <%= scope.lookupvar('::hostname') %>
+<%= scope.lookupvar('::operatingsystem') %> <%= scope.lookupvar('::operatingsystemrelease') %> <% if has_variable?("::architecture") then %><%= @architecture %><% end %> <%= scope.lookupvar('::hostgroup') %>
+-------------------------------------------------
+Puppet: <%= scope.lookupvar('::puppetversion') %>
+Facter: <%= scope.lookupvar('::facterversion') %>
+
+FQDN: <%= scope.lookupvar('::fqdn') %>
+IP:   <%= scope.lookupvar('::ipaddress') %>
+<% if has_variable?("ipaddress_eth1") then -%>
+Backup IP: <%= scope.lookupvar('::ipaddress_eth1') %>
+<% end -%>
+
+<% if has_variable?("::processor0") then -%>
+Processor: <%= scope.lookupvar('::processor0') %>
+<% end -%>
+<% if has_variable?("::memorysize") then -%>
+Memory:    <%= scope.lookupvar('::memorysize') %>
+<% end -%>
+<% if has_variable?("::comment") and not scope.lookupvar('::comment').empty? then -%>
+Comment: <%= scope.lookupvar('::comment') %>
+<% else -%>
+
+<% end -%>
+-------------------------------------------------
+
