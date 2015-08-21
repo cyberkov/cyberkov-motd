@@ -42,7 +42,7 @@ class motd {
     default => 'root',
   }
 
-  $ascii_banner = generate('/usr/bin/env', '/usr/bin/figlet','-w', '186', '-p', '-f', 'slant', "$hostname")
+  $ascii_banner = generate('/usr/bin/env', '/usr/bin/figlet','-w', '186', '-p', '-f', 'slant', $::hostname)
 
   file { '/etc/motd':
     ensure  => file,
